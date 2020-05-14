@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/cyborg.css">
+    <title>store-front</title>
+</head>
+
+<body>
+    <!-- <style>
+        * {
+            outline: 1px solid red;
+        }
+    </style> -->
+    <header class=" dropshadow container-fluid text-center bg-info text-light">
+        <div class="row">
+            <div class="col">
+                <h1>Mad Graphixxx</h1>
+            </div>
+        </div>
+    </header>
+
+    <main class="container-fluid">
+        <div class="row">
+            <div class="col mt-5">
+                <form class="form-inline" onsubmit="app.marketsController.addToMarket(event)">
+                    <div class="form-group mx-2">
+                        <label for="title">Title </label>
+                        <input type="text" class="form-control" name="title" id="title" aria-describedby="title"
+                            placeholder="Title..." required />
+                    </div>
+                    <div class="form-group mx-2">
+                        <label for="price">Price </label>
+                        <input type="text" class="form-control" name="price" id="price" aria-describedby="price"
+                            placeholder="Price..." required />
+                    </div>
+                    <div class="form-group mx-2">
+                        <label for="imgUrl">Image Url</label>
+                        <input type="url" class="form-control" name="imgUrl" id="imgUrl" aria-describedby="imgUrl"
+                            placeholder="Image Url..." />
+                    </div>
+                    <button type="submit" class="btn btn-outline-success">
+                        Create
+                    </button>
+                </form>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-8 text-center mt-3">
+                <h3>Market</h3>
+                <div id="markets" class="row">
+
+                </div>
+            </div>
+            <div class="col-4 text-center">
+                <h3 class="text-success">Cart</h3>
+                <div id="carts" class="row">
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+    </main>
+
+
+
+
+
+
+    <footer class=" dropshadow container-fluid text-center bg-info text-light">
+        <div class="row">
+            <div class="col">
+                <h1>Made By Blake And Xander</h1>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app/main.js" type="module"></script>
+</body>
+
+</html>
